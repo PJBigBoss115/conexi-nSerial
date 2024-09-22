@@ -42,5 +42,5 @@ def iniciar_servidor(ip: str, puerto: int, puerto_serial: str, baudrate: int):
         ser.close()
 
 # Cambiar el puerto serial según tu sistema
-if _name_ == "_main_":
+if __name__ == "__main__":
     iniciar_servidor("0.0.0.0", 12345, "COM3", 9600)
